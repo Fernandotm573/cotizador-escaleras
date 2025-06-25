@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cotizador de Escaleras</title>
+</head>
+<body>
+  <h1>Cotiza tu escalera</h1>
+  <form action="/cotizar" method="post">
+    <label>Tipo de escalera:</label>
+    <select name="tipo">
+      <option value="recta">Recta</option>
+      <option value="caracol">Caracol</option>
+      <option value="L">En L</option>
+    </select><br><br>
+
+    <label>Altura (en metros):</label>
+    <input type="number" step="0.1" name="altura" required><br><br>
+
+    <label>Material:</label>
+    <select name="material">
+      <option value="acero carbono">Acero al carbono</option>
+      <option value="inoxidable">Inoxidable</option>
+    </select><br><br>
+
+    <label>Acabado:</label>
+    <select name="acabado">
+      <option value="pintura">Pintura</option>
+      <option value="galvanizado">Galvanizado</option>
+    </select><br><br>
+
+    <button type="submit">Calcular cotización</button>
+  </form>
+</body>
+</html>
